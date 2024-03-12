@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Top Section Styling */
+
+
+
+
+#top{
+    background-color: #9d4dff;
+}
+
+
+
+.navbar {
+    display: flex;
+    padding: 20px 10rem;
+    gap: 50px;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #c101d6; 
+    width: 100%;
+}
+
+.navbar img{
+    margin-right: 140px;
+    cursor: pointer;
+}
+
+.navbar .nav-text{
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px;
+    cursor: pointer;
+}
+
+.navbar button{
+    background-color: #fff;
+    color: rgb(142, 0, 250);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 30rem;
+}
+
+
+
+.head-section{
+    color: #fff;
+    padding: 10rem 10rem;
+}
+
+.header-heading{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.header-text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* Middle Section Styling */
+
+
+#middle{
+    background-color: rgb(213, 239, 243);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.boxes .box{
+    width:300px;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    padding:  30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 2px #313131;
+}
+
+.boxes .box:hover{
+    transform: scale(1.03);
+}
+
+.box i{
+    font-size: 70px;
+    margin: 20px 120px;
+    color: rgb(108, 7, 223);
+    cursor: pointer;
+}
+
+.box .box-text{
+    text-align: center;
+    font-weight: 700;
+    font-size:20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.box .box-contact{
+    text-align: center;
+    color: blueviolet;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.para{
+    justify-content: center;
+    margin: auto  8rem;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.para .para-text{
+    font-size: 18px;
+    margin-left: 80px;
+    color: rgb(82, 82, 82);
+}
+
+
+
+/* Contact Container Styling */
+
+
+
+.contact-container{
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    margin:  50px auto 100px auto;
+}
+
+
+.part1{
+    padding:30px;
+}
+.part1 .contact-head{
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+
+
+.contact-info{
+    display: flex;
+    /* gap: 30px; */
+    margin: auto 50px;
+    
+}
+
+
+    .contact-info p{
+        padding-left: 60px;
+        
+    }
+
+
+
+.contact-info i{
+    color: #680be9;
+     font-size: 28px;
+     /* background-color: aqua; */
+     /* width: 50px;
+     height: 40px; */
+     justify-content: center;
+     align-items: center;
+     /* border-radius: 20px;
+     padding: 10px 0px 0px 5px; */
+     padding-right: 10px;
+     cursor: pointer;
+     margin-bottom: 50px;
+  
+     
+
+}
+
+
+
+
+.part2{
+    padding: 0px 20px;
+}
+
+.input-one{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type="text"]{
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(46, 46, 46);
+    background-color: rgb(240, 225, 250);
+    border-radius:5px;
+}
+
+
+.outer textarea{
+    width: 900px;
+    height: 200px;
+    border: 1px solid rgb(46, 46, 46);
+    background-color: rgb(240, 225, 250);
+    border-radius:5px;
+}
+
+
+
+.button-section{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 60px;
+    margin-bottom: 40px;
+}
+
+span{
+    color: blue;
+}
+
+.button-section button{
+    background-color: blue;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-section button:hover{
+    background-color: #5c00dc;
+}
+
+
+.button-text{
+    margin: auto 10px;
+    cursor: pointer;
+
+}
+
+
+
+/* Questions Section Styling */
+
+
+.questions{
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    border-radius: 20px;
+    margin:  90rem auto 0px 230px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: absolute;
+
+}
+
+
+.left {
+    margin:40px;
+}
+.left .left-head{
+    font-size: 30px;
+    color: rgb(9, 9, 133);
+}
+
+.left  .left-para{
+    font-size: 22px;
+    color: rgb(32, 32, 32);
+}
+
+
+.left button{
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+.left button:hover{
+    cursor: pointer;
+    background-color: rgb(176, 243, 243);
+    color: blue;
+    font-weight: 600;
+}
+
+
+.right img{
+    margin-right: 40px;
+}
+
+
+
+
+
+
+/* Footer Section Styling */
+
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    background-color: rgb(52, 52, 159);
+    margin-top: 200px;
+    padding: 200px 0px 20px 0px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-one{
+    cursor: pointer;
+}
+.footer-one img{
+    margin-right: 10px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+
+.footer-one .a-para{
+    font-size: 18px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+
+.footer-one .footer-icons{
+    font-size: 30px;
+    
+}
+
+.footer-icons i{
+    padding: 0px 3px;
+}
+
+.footer-two{
+    padding: 5px 40px;
+    
+}
+
+.footer-two .two-head{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+ul li{
+    list-style-type:none;
+    line-height: 0.8cm;
+    cursor: pointer;
+}
+
+
+
+.footer-three .three-head{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.footer-three p{
+    margin: 10px;
+    font-size: 18px;
+   cursor: pointer;
+}
+
+
+.bottom .bottom-text{
+    padding: 0px 250px;
+    font-size: 12px;
+    margin-bottom: -10px;
+}
+
+.tt{
+    text-align: center;
+    font-size: 12px;  
+    margin-bottom: 10px; 
+}
+
+hr{
+    width: 70%;
+   margin: 0px auto;
+}
+
+
+.final p{
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px
+}
