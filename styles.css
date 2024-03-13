@@ -97,8 +97,16 @@
     transform: scale(1.01);
 }
 
+a{
+    text-decoration: none;
+}
+.box{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
 .box i {
-    margin: 20px auto; 
     font-size: 3rem;
 }
 
@@ -318,5 +326,53 @@ input[type="text"], textarea {
     .top{
         display:flex;
         flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+
+    }
+
+    .navbar img{
+        width: 25px;
+        height: 20px;
+        margin-inline-start: -20px;
+    }
+
+    .navbar .nav-text{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+}
+
+
+@media screen and (max-width:340px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .navbar img{
+        width: 25px;
+        height: 20px;
+        margin-inline-start: -30px;
+    }
+    
+
+    .navbar .nav-text{
+        font-size: 10px;
+        margin-left: 0px;
+        display: inline;
+    }
+
+    .navbar button{
+        display:inline-block;
+        padding: 10px;
     }
 }
