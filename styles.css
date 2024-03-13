@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -6,663 +6,317 @@
 
 
 
-/* Top Section Styling */
-
-
-
-
-#top{
+#top {
     background-color: #9d4dff;
 }
 
-
-
 .navbar {
     display: flex;
-    padding: 20px 10rem;
-    gap: 50px;
+    padding: 20px 2rem; 
+    gap: 10px; 
     color: #fff;
     position: fixed;
     z-index: 999;
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center; 
     transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color: #c101d6; 
-    width: 100%;
+    background-color: #c101d6;
 }
 
-.navbar img{
-    margin-right: 140px;
-    cursor: pointer;
+.navbar img {
+    margin-right: 0; 
 }
 
-.navbar .nav-text{
-    font-size: 20px;
-    font-weight: bold;
-    margin:10px;
-    cursor: pointer;
+.navbar .nav-text {
+    display: block; 
+    font-size: 24px;
 }
 
-.navbar button{
-    background-color: #fff;
-    color: rgb(142, 0, 250);
-    padding: 15px 30px;
+.navbar button {
+    margin-right: 40px;
     border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 800;
-    margin-left: 30rem;
-}
-
-
-
-.head-section{
-    color: #fff;
-    padding: 10rem 10rem;
-}
-
-.header-heading{
-    font-size: 50px;
-    letter-spacing: 1px;
-}
-
-.header-text{
-    font-size: 16px;
-    font-weight: 500;
-}
-
-
-
-
-
-
-
-/* Middle Section Styling */
-
-
-#middle{
-    background-color: rgb(213, 239, 243);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.boxes{
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-    gap: 20px;
-}
-
-.boxes .box{
-    width:300px;
-    height: auto;
-    border: none;
-    border-radius: 20px;
-    background-color: #fff;
-    padding:  30px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 10px 2px #313131;
-}
-
-.boxes .box:hover{
-    transform: scale(1.03);
-}
-
-.box i{
-    font-size: 70px;
-    margin: 20px 120px;
-    color: rgb(108, 7, 223);
-    cursor: pointer;
-}
-
-.box .box-text{
-    text-align: center;
-    font-weight: 700;
-    font-size:20px;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-.box .box-contact{
-    text-align: center;
     color: blueviolet;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
     font-weight: 600;
+}
+
+.head-section {
+    color: #fff;
+    padding: 10rem 2rem; 
+}
+
+.header-heading {
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-bottom: 1rem; 
     cursor: pointer;
 }
 
-
-
-
-
-
-.para{
-    justify-content: center;
-    margin: auto  8rem;
-    align-items: center;
-    padding: 30px 0;
-}
-
-
-.para .para-text{
-    font-size: 18px;
-    margin-left: 80px;
-    color: rgb(82, 82, 82);
-}
-
-
-
-/* Contact Container Styling */
-
-
-
-.contact-container{
-    width: 70%;
-    height: auto;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 20px;
-    margin:  50px auto 100px auto;
-}
-
-
-.part1{
-    padding:30px;
-}
-.part1 .contact-head{
-    font-size: 28px;
-    color: #000;
-    margin-bottom: 30px;
-}
-
-
-
-.contact-info{
-    display: flex;
-    /* gap: 30px; */
-    margin: auto 50px;
+.header-text {
+    font-size: 1rem; 
+    text-align: center;
+    cursor: pointer;
     
 }
 
+/* Middle Section Styling */
 
-    .contact-info p{
-        padding-left: 60px;
-        
-    }
-
-
-
-.contact-info i{
-    color: #680be9;
-     font-size: 28px;
-     /* background-color: aqua; */
-     /* width: 50px;
-     height: 40px; */
-     justify-content: center;
-     align-items: center;
-     /* border-radius: 20px;
-     padding: 10px 0px 0px 5px; */
-     padding-right: 10px;
-     cursor: pointer;
-     margin-bottom: 50px;
-  
-     
-
+#middle {
+    background-color: rgb(213, 239, 243);
+    width: 100%;
+    padding: 0 1rem; 
+    box-sizing: border-box; 
 }
 
-
-
-
-.part2{
-    padding: 0px 20px;
-}
-
-.input-one{
+.boxes {
     display: flex;
-    flex-direction: row;
-    gap: 100px;
-    margin: auto;
+    flex-wrap: wrap; 
     justify-content: center;
-    margin-bottom: 30px;
+    gap: 1rem; 
+    padding: 1rem 0; 
 }
 
-.inner{
+.boxes .box {
+    flex: 1 1 400px; 
+    max-width: 100%; 
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 30px; 
+    cursor: pointer; 
+    box-shadow: 0px 0px 10px 2px #fb0edf46;
+}
+
+.boxes .box:hover{
+    transform: scale(1.01);
+}
+
+.box i {
+    margin: 20px auto; 
+    font-size: 3rem;
+}
+
+.box .box-text{
+    margin: 10px auto;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.para {
+    padding: 2rem;
+    text-align: center; 
+}
+
+.para .para-text {
+    font-size: 1rem; 
+}
+
+/* Contact Container Styling */
+
+.contact-container {
+    width: 100%;
+    padding: 3  rem; 
+    box-sizing: border-box; 
+    background-color: azure;
+}
+
+.part1, .part2 {
+    padding: 1rem; 
+}
+
+.contact-head {
+    font-size: 1.5rem; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 10px auto;
+    
 }
 
-
-input[type="text"]{
-    width: 400px;
-    height: 50px;
-    border: 1px solid rgb(46, 46, 46);
-    background-color: rgb(240, 225, 250);
-    border-radius:5px;
+.contact-info p {
+    margin: 0.5rem 0; 
+    font-size: 1.2rem;
+    cursor: pointer; 
+    font-weight: 600;
+    
 }
 
-
-.outer textarea{
-    width: 900px;
-    height: 200px;
-    border: 1px solid rgb(46, 46, 46);
-    background-color: rgb(240, 225, 250);
-    border-radius:5px;
-}
-
-
-
-.button-section{
+.input-one, .button-section {
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding: 10px 60px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 0.5rem;
+   
 }
 
-span{
-    color: blue;
+.inner {
+    margin-bottom: 0.5rem; 
 }
+
+input[type="text"], textarea {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 0.7rem; 
+    box-sizing: border-box;
+    background-color: #ead8ff;
+    border: 1px solid black;
+}
+
 
 .button-section button{
-    background-color: blue;
-    padding: 10px 30px;
     border: none;
-    border-radius: 10px;
-    color: #fff;
     cursor: pointer;
-    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: blue;
 }
-
-.button-section button:hover{
-    background-color: #5c00dc;
-}
-
 
 .button-text{
-    margin: auto 10px;
-    cursor: pointer;
-
+   text-align: center;
+   font-size: 18px;
 }
 
 
-
+.button-text span{
+    color: #c101d6;
+    font-size: 18px;
+    cursor: pointer;
+   
+}
 /* Questions Section Styling */
 
-
-.questions{
-    width: 70%;
-    height: auto;
-    background-color: #fff;
-    justify-content: center; 
-    align-items: center; 
-    border: none;
-    border-radius: 20px;
-    margin:  90rem auto 0px 230px;
+.questions {
+    width: 100%;
+    padding: 2rem; 
+    box-sizing: border-box; 
     display: flex;
-    flex-direction: row;
-    z-index: 1;
-    position: absolute;
+    flex-direction: column;
+    align-items: center; 
+}
 
+.left, .right {
+    padding: 1rem; 
+    text-align: center; 
+}
+
+.left .left-para {
+    font-size: 1rem; 
+}
+
+.right img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 1rem; 
 }
 
 
-.left {
-    margin:40px;
-}
-.left .left-head{
-    font-size: 30px;
-    color: rgb(9, 9, 133);
-}
-
-.left  .left-para{
-    font-size: 22px;
-    color: rgb(32, 32, 32);
-}
-
-
-.left button{
-    background-color: blue;
+.questions .left button{
     border: none;
-    border-radius: 20px;
-    padding: 10px 40px;
+    background-color: blue;
+    padding: 10px 30px;
     color: #fff;
-    font-size: 16px;
-    margin: 10px auto;
+    border-radius: 20px;
+    margin: 10px 0;
     cursor: pointer;
 }
-
-
-.left button:hover{
-    cursor: pointer;
-    background-color: rgb(176, 243, 243);
-    color: blue;
-    font-weight: 600;
-}
-
-
-.right img{
-    margin-right: 40px;
-}
-
-
-
 
 
 
 /* Footer Section Styling */
 
-
-.footer-section{
+.footer-section {
     width: 100%;
-    height: auto;
+    padding: 2rem 0; 
+    box-sizing: border-box; 
     background-color: rgb(52, 52, 159);
-    margin-top: 200px;
-    padding: 200px 0px 20px 0px;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
+    text-align: center; 
+    
 }
 
+.footer-one{
+    display: flex;
+    flex-direction:column;
+}
+
+.footer-one img{
+    margin: 0px 20px;
+    width: 40px;
+    height: 30px;
+}
 
 .top{
     display: flex;
     flex-direction: row;
+    gap: 50px;
+    margin: auto;
     justify-content: center;
 }
 
-.footer-one{
+
+.top, .bottom {
+    padding: 1rem;
+}
+
+.footer-one img {
+    margin-right: 0;
+}
+
+.footer-one .a-para {
+    font-size: 1rem;
+}
+
+.footer-icons i {
+    margin: 20px 0.5rem;
+    font-size: 44px;
     cursor: pointer;
 }
-.footer-one img{
-    margin-right: 10px;
-    margin-bottom: -10px;
-    cursor: pointer;
+
+.footer-two ul {
+    padding-left: 0;
+    font-size: 1rem;
 }
 
 
-.footer-one .a-para{
-    font-size: 18px;
-    margin: 20px 0;
-    cursor: pointer;
+.footer-two li{
+    list-style-type: none;
 }
 
-
-.footer-one .footer-icons{
-    font-size: 30px;
-    
-}
-
-.footer-icons i{
-    padding: 0px 3px;
-}
-
-.footer-two{
-    padding: 5px 40px;
-    
-}
-
-.footer-two .two-head{
+.two-head,.three-head{
     font-size: 24px;
     font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
-ul li{
-    list-style-type:none;
-    line-height: 0.8cm;
-    cursor: pointer;
+.bottom .bottom-text {
+    font-size: 0.8rem;
 }
 
-
-
-.footer-three .three-head{
-    font-size: 24px;
-    font-weight: 600;
-    cursor: pointer;
+.tt {
+    font-size: 0.8rem;
 }
 
-
-.footer-three p{
-    margin: 10px;
-    font-size: 18px;
-   cursor: pointer;
-}
-
-
-.bottom .bottom-text{
-    padding: 0px 250px;
-    font-size: 12px;
-    margin-bottom: -10px;
-}
-
-.tt{
-    text-align: center;
-    font-size: 12px;  
-    margin-bottom: 10px; 
-}
-
-hr{
-    width: 70%;
-   margin: 0px auto;
-}
-
-
-.final p{
-    text-align: center;
-    cursor: pointer;
-    font-size: 18px
+.final p {
+    font-size: 1rem
 }
 
 
 
-
-
-/* Responsive CSS for Header Section */
-@media only screen and (max-width: 768px) {
-    .navbar {
-        padding:40px;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1400px; 
-        width: 100%;
-        height: auto;
-        /* background-color: rgb(244, 17, 51); */
-    }
-
-    .navbar img {
-        margin-right: auto;
-        margin-left: 20px;
-    }
-
-    .navbar .nav-text {
-        display: none;
-    }
-
-    .navbar button {
-        margin-left: -25rem;
-        margin-top: 40px;
-        position: static;
-        font-size: 24px;
-        padding: 20px;
-    }
-
-    .head-section {
-        padding: 50px 80px;
-        background-color: #c23c2a;
-        width: 1200px;
-    }
-
-    .header-heading {
-        font-size: 48px;
-        text-align: center;
-    }
-
-    .header-text {
-        font-size: 27px;
-        text-align: center;
-    }
-}
-
-/* Responsive CSS for Middle Section */
-@media only screen and (max-width: 768px) {
-    #middle{
-        width: fit-content;
-        max-width:1200px;
-        padding: 10px 167px;
-    }
-    #middle .boxes {
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-    }
-
-    .boxes .box {
-        width: 70%;
-        padding: 60px 0px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .box i {
-        margin: 10px auto;
-    }
-
-    .para {
-        margin: auto;
-    }
-
-    .para .para-text {
-        margin-left: 0;
-        text-align: center;
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-
-
-
-    .contact-container {
-        width: 100%;
-        padding: 0px 40px;
-        margin: auto;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .part1 .contact-head{
-        font-size: 80px;
-    }
-
-    .contact-info p {
-        padding-left: 0;
-        margin: 10px;
-        font-size: 40px;
-    }
-
-    .input-one {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    input[type="text"], textarea {
-        width: 80%;
-        height: 70px;
-    }
-
-    .button-section {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .button-section button {
-        width: 100%;
-        margin: 0;
-    }
-
-    .questions {
-        width: fit-content;
-        flex-direction: row;
-        align-items: center;
-        margin: 190rem 80px;
-        padding: 30px 170px;
-    }
-
-    .left {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .left .left-para{
-        font-size: 24px;
-    }
-
-    .left button {
-        width: 100%;
-    }
-
-    .right img {
-        margin-right: 0;
-        margin-bottom: 20px;
-        padding: 0px 60px;
-    }
-}
-
-/* Responsive CSS for Footer Section */
-@media only screen and (max-width: 768px) {
-    .footer-section {
-        
-        padding: 100px 0px 0px 0px;
-        margin: 60rem 0 0 0;
-    }
-
-    .footer-one, .footer-two, .footer-three {
-        text-align: center;
-        font-size: 24px;
-        padding: 0px 40px;
-    }
-
-    .footer-icons {
-        justify-content: center;
-    }
-
-    .footer-icons i {
-        margin: 0 5px;
-    }
-
-    .footer-two ul {
-        padding-left: 0;
-        font-size: 24px;
-        
-    }
-
-
-    .bottom .bottom-text {
-        padding: 0px 30px;
-        font-size: 30px;
-    }
-
-    .tt {
-        font-size: 30px;
-    }
-
-    hr {
-        margin: 20px auto;
-    }
-
-    .final p {
-        font-size: 28px;
-        padding: 0px 0 30px 0;
+@media screen and (max-width:768px){
+    .top{
+        display:flex;
+        flex-wrap: wrap;
     }
 }
