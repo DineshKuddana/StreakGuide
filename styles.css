@@ -596,7 +596,7 @@ hr{
         flex-direction: row;
         align-items: center;
         margin: 190rem 80px;
-        padding: 10px 150px;
+        padding: 30px 170px;
     }
 
     .left {
@@ -623,8 +623,8 @@ hr{
 @media only screen and (max-width: 768px) {
     .footer-section {
         
-        padding: 260px 0px 0px 0px;
-        margin: 30rem 0 0 0;
+        padding: 100px 0px 0px 0px;
+        margin: 60rem 0 0 0;
     }
 
     .footer-one, .footer-two, .footer-three {
